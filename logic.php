@@ -17,7 +17,7 @@ $this->setGenerator(null);
 
 
 // template css
-//$doc->addStyleSheet($tpath.'/css/app.min.css');
+$doc->addStyleSheet($tpath.'/css/app.css');
 
 
 

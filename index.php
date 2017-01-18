@@ -159,9 +159,8 @@
       </div>
     </div>
 
-   <!--  <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script> -->
+     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="bower_components/foundation-sites/dist/js/foundation.js"></script> -->  
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/app.js"></script>
   </body>
 </html>
