@@ -1,10 +1,13 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var concat = require('gulp-concat');
+var cssnano = require('gulp-cssnano');
+var rename = require('gulp-rename');
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
   'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  //'bower_components/motion-ui/src'
 ];
 
 gulp.task('sass', function() {
@@ -17,6 +20,8 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
     .pipe(gulp.dest('css'));
 });
 
