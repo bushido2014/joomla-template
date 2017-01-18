@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.1" type="template" client="site" method="upgrade">
+	
+	<name>frontend</name><!-- name the template -->
+	<creationDate>2016-04-14</creationDate><!-- the date your are beginn to code -->
+	<author>Viorel Soltan</author><!-- your name (oops, I repeat myself) -->
+	<authorEmail>joomjoom2011@gmail.com</authorEmail><!-- your email address -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description><![CDATA[ 
+		<h1>Blank Joomla Template</h1>
+	]]></description><!-- change the description as you like -->
+	
+	<files><!-- no need to change -->
+		<folder>bower_components</folder>
+		<folder>css</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>bower.json</filename>
+        <filename>gulpfile.js</filename>
+        <filename>package.json</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions><!-- define the positions for modules here -->
+		<position>menu</position>
+		<position>top_descr</position>
+		<position>about</position>
+		<position>contact</position>
+		<position>contactLeft</position>
+		<position>contactRight</position>
+	</positions>
+	
+</extension>
