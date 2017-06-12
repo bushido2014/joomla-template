@@ -10,8 +10,14 @@ $pageclass = $params->get('pageclass_sfx');
 $tpath = $this->baseurl.'/templates/'.$this->template;
 $ContactTilte = 'Contact';
 $sitename = $app->getCfg('sitename');
+$sitetitle = $this->params->get('sitetitle');
+$sitedescription = $this->params->get('sitedescription');
 // generator tag
 $this->setGenerator(null);
+
+//count modules
+$left    = $this->countModules('Left_Sidebar');
+$right   = $this->countModules('Right_Sidebar');
 
 // template js
 

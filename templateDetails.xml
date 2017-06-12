@@ -41,5 +41,33 @@
 		<position>contactLeft</position>
 		<position>contactRight</position>
 	</positions>
-	
+		<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_frontend.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_frontend.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				
+			<field name="logoFile" class="" type="media" default=""
+					label="TPL_FRONTEND_LOGO_LABEL"
+					description="TPL_FRONTEND_LOGO_DESC" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				
+
+				
+
+				</fieldset>
+		</fields>
+	</config>
 </extension>
